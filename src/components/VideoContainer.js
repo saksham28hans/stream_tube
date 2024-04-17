@@ -4,12 +4,9 @@ import VideoCard from './VideoCard';
 import { Link } from 'react-router-dom';
 
 const VideoContainer = () => {
-
   const [videos, setvideos] = useState([]);
   useEffect(() => {
-    return () => {
       getVideos();
-    };
   }, []);
 
   const getVideos = async ()=>{
